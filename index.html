@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TinDog</title>
+  <!-- Note to self: Bootstrap should always be on top of the styles.css file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f9c7df275a.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Bootstrap Installation -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- navbar-dark changes the theme of the *text* inside the navbar
+      bg-dark changes the colour of the navbar to dark theme -->
+        <a class="navbar-brand" href="">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cta" class="nav-link">Download</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown link
+              </a>
+              <!-- dropdown-meny-end was the solution for the dropdown menu going off the page -->
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="">Action</a></li>
+                <li><a class="dropdown-item" href="">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 col-md-12">
+          <!-- Now, remember, from our previous code, that you don't have to specify the medium 12 unit or the small 12
+unit, because it's by default 100 percent, and you should read this code as on any screen size that's
+on the large size or bigger,
+so laptop or bigger, it should be a six unit column, and anything smaller than that will take up the full
+width of the row. -->
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-btn"><i
+              class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6 iphone-container">
+          <img class="title-img" src="images/iphone6.png" alt="iphone-mockup" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+    <!-- <div class="container-fluid text-center features-sec"> -->
+    <div class="row feature-row">
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-circle-check feature-img fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-bullseye feature-img fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-heart feature-img fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <!-- Testimonials -->
+
+  <!-- remember to change the class names 
+  when copying from bootstrap docs -->
+  <section id="testimonials">
+    <!-- <div class="container-fluid text-center"> -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <!-- data-bs-hover="pause" this function was removed from the above line -->
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <h2>
+            I no longer have to sniff other dogs for love. I've found the hottest
+            Corgi on TinDog. Woof.
+          </h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile" />
+          <em>Pebbles, New York</em>
+        </div>
+
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of
+            their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+      </div>
+      <!-- </div> -->
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo" />
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <div class="">
+      <h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <!-- sincce we want 3 columns on the screen,
+        we divide 12 by 3 i.e. 4 and use -->
+          <div class="card-group">
+            <div class="card">
+              <div class="card-header">
+                <h3>Chihuahua</h3>
+              </div>
+              <div class="d-grid gap-2">
+                <div class="card-body">
+                  <h2>Free</h2>
+                  <p>No Priority Listing</p>
+                  <p>5 Matches Per Day</p>
+                  <p>10 Messages Per Day</p>
+                  <p>Unlimited App Usage</p>
+                  <div class="d-grid">
+                    <button class="btn btn-block btn-outline-dark btn-lg" type="button">Sign Up</button>
+                    <!-- d-grid is used to change the display of the button to cover the whole card -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2>$49 / mo</h2>
+              <p>No Priority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+
+                <button class="btn d-grid btn-lg btn-dark" type="button">Sign Up</button>
+                <!-- btn-block so that the the button takes the full width of the card -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2>$99 / mo</h2>
+              <p>Priority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <!-- for gap-2 see the docs, basically the gap between 
+                buttons which are next to each other 
+                https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons-->
+                <button class="btn btn-block btn-lg btn-dark" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h3 class="cta-title">Find the True Love of Your Dog's Life Today.</h3>
+    <div>
+      <button class="cta-download-btn btn btn-lg btn-dark" type="button"><i class="fa-brands fa-apple"></i>
+        Download</button>
+      <button class="cta-download-btn btn btn-lg btn-light" type="button"><i class="fa-brands fa-google-play"></i>
+        Download</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-xl social-icon fa-brands fa-instagram"></i>
+    <i class="fa-xl social-icon fa-brands fa-facebook"></i>
+    <i class="fa-xl social-icon fa-brands fa-twitter"></i>
+    <i class="fa-xl social-icon fa-solid fa-envelope"></i>
+    <p>© Copyright TinDog</p>
+    <!-- increase fontawesome icon size
+      https://fontawesome.com/docs/web/style/size -->
+  </footer>
+</body>
+</html>

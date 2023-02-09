@@ -1,0 +1,192 @@
+/* this was done for remodeling lesson lec-88
+which was skipped */
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+p {
+    color: #8f8f8f;
+  }
+  
+
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+  /* top left-right bottom */
+}
+
+/* Navigation Bar */
+/* add it based on the heirarchy for Ex. Put navbar brand goes below navbar */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  padding-bottom: 4.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Download Button */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+/* Features */
+
+#features {
+  padding: 7% 15%;
+  text-align: center;
+}
+.feature-img {
+  color: #ef8172;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+  /* use width:100% to center the icon and then use text-align:center*/
+  /* it works without adding text align center also */
+  /* fa-5x,3x are the size of the icon */
+}
+
+
+.features-sec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* THIS WAS DONE BY ANGELA USED THE ONE BELOW */
+}
+/* #features{
+    padding: 7% 15%;
+  } */
+.feature-box {
+  padding: 5%;
+  /* for the spacing between the 3 feature rows when on ipad */
+}
+.feature-img:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #ffff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  /* to make the image circle */
+  margin: 20px;
+}
+
+/* press */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+.carousel-item {
+  padding: 7% 10%;
+}
+
+/* pricing */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* z index things */
+.title-img {
+  /* z-index: -1; */
+
+  position: absolute;
+  right: 30%;
+}
+#features {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.iphone-container {
+  position: relative;
+}
+
+@media (max-width: 1028px) {
+  /* 1028px and below */
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    transform: rotate(0);
+    position: static;
+  }
+}
+
+/* CTA- SECTION */
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  padding: 7% 15%;
+  text-align: center;
+}
+.cta-title {
+  /* padding-bottom: 15px; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.cta-download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* Footer Section */
+#footer {
+  padding: 7% 15%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.social-icon {
+  margin: 20px 10px;
+}
